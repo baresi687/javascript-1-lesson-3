@@ -1,9 +1,9 @@
 const pet = {
-    type: "pig",
-    colour: "#ff0000",
-    age: 10,
-    isFriendly: true,
-    name: "Benny",
+  type: "pig",
+  colour: "#ff0000",
+  age: 10,
+  isFriendly: true,
+  name: "Benny",
 };
 
 // 1.select header h4
@@ -29,11 +29,14 @@ let friendly2;
 }*/
 
 // Ternary operator
+friendly2 = pet.isFriendly
+  ? "This pet is friendly"
+  : "This pet is not friendly";
 
-friendly2 = pet.isFriendly ? "This pet is friendly" : "This pet is not friendly"
-
-console.log(friendly2)
+console.log(friendly2);
 
 header.innerHTML = pet.type;
 age.innerHTML = pet.age;
-friendly.innerHTML = pet.isFriendly ? "this pet is friendly" : "this pet is not friendly";
+friendly.innerHTML = pet.isFriendly
+  ? "this pet is friendly"
+  : "this pet is not friendly";
